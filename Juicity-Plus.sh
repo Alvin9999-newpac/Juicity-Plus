@@ -85,7 +85,7 @@ show_menu() {
 
   echo -e "${BOLD}${CYAN}"
   echo " ================================================"
-  echo "   Juicity 管理脚本 v1.0.0"
+  echo "   Juicity 管理脚本 v1.1.0"
   echo "   https://github.com/Alvin9999-newpac/Juicity-Plus"
   echo -e " ================================================${PLAIN}"
   printf " %-12s ${BC}%s${PLAIN}\n"   "BBR 加速："  "$BBR"
@@ -110,13 +110,7 @@ _show_config() {
   source "$CRED_FILE"
   local IP; IP=$(get_ip)
 
-  # 生成证书 SHA256 hash（用于客户端 pinned_certchain_sha256）
-  local CERT_HASH=""
-  if [[ -f "$CERT_FILE" ]]; then
-    CERT_HASH=$(openssl x509 -in "$CERT_FILE" -outform DER 2>/dev/null \
-      | openssl dgst -sha256 -binary 2>/dev/null \
-      | openssl base64 -A 2>/dev/null || echo "")
-  fi
+
 
   echo -e "\n${BOLD}${GREEN} ========== 节点信息 ==========${PLAIN}"
   echo
@@ -129,9 +123,11 @@ _show_config() {
   echo   "  证书    : 自签名（allow_insecure=true）"
 
   echo
+  echo
   echo -e " ${BOLD}[分享链接]${PLAIN}"
-  local SHARE="juicity://${UUID}:${PASS}@${IP}:${PORT}?congestion_control=bbr&sni=www.bing.com&allow_insecure=1"
-  [[ -n "$CERT_HASH" ]] && SHARE="${SHARE}&pinned_certchain_sha256=${CERT_HASH}"
+  local SHARE
+  SHARE=$("${INSTALL_DIR}/juicity-server" generate-sharelink -c "$CONFIG_FILE" 2>/dev/null || true)
+  [[ -z "$SHARE" ]] && SHARE="juicity://${UUID}:${PASS}@${IP}:${PORT}?congestion_control=bbr&sni=www.bing.com&allow_insecure=1"
   echo "  ${SHARE}"
 
   echo
