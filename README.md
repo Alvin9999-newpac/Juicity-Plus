@@ -1,6 +1,6 @@
 # Juicity-Plus
 
-juicity 一键管理脚本，自动搭建 QUIC 代理服务，生成分享链接和客户端配置。
+juicity 一键管理脚本，自动搭建 juicity 代理服务，生成分享链接和客户端配置。
 
 ---
 
