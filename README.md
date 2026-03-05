@@ -17,15 +17,13 @@ juicity 一键管理脚本，自动搭建 juicity 代理服务，生成分享链
 
 ---
 
-## 使用方法
-
-**wget 方式：**
+## 一键脚本
 
 ```bash
 wget -O Juicity-Plus.sh https://raw.githubusercontent.com/Alvin9999-newpac/Juicity-Plus/main/Juicity-Plus.sh && chmod +x Juicity-Plus.sh && bash Juicity-Plus.sh
 ```
 
-**curl 方式：**
+或
 
 ```bash
 curl -fsSL -o Juicity-Plus.sh https://raw.githubusercontent.com/Alvin9999-newpac/Juicity-Plus/main/Juicity-Plus.sh && chmod +x Juicity-Plus.sh && bash Juicity-Plus.sh
