@@ -22,13 +22,13 @@ juicity 一键管理脚本，自动搭建 juicity 代理服务，生成分享链
 **wget 方式：**
 
 ```bash
-wget -O juicity-plus.sh https://raw.githubusercontent.com/Alvin9999-newpac/Juicity-Plus/main/juicity-plus.sh && chmod +x juicity-plus.sh && bash juicity-plus.sh
+wget -O Juicity-Plus.sh https://raw.githubusercontent.com/Alvin9999-newpac/Juicity-Plus/main/Juicity-Plus.sh && chmod +x Juicity-Plus.sh && bash Juicity-Plus.sh
 ```
 
 **curl 方式：**
 
 ```bash
-curl -fsSL -o juicity-plus.sh https://raw.githubusercontent.com/Alvin9999-newpac/Juicity-Plus/main/juicity-plus.sh && chmod +x juicity-plus.sh && bash juicity-plus.sh
+curl -fsSL -o Juicity-Plus.sh https://raw.githubusercontent.com/Alvin9999-newpac/Juicity-Plus/main/Juicity-Plus.sh && chmod +x Juicity-Plus.sh && bash Juicity-Plus.sh
 ```
 
 ---
