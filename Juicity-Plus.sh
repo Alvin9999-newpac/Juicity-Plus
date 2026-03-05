@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # ============================================================
-#  Juicity 代理管理脚本
-#  项目地址：https://github.com/juicity/juicity
+#  Juicity 管理脚本
+#  项目地址：https://github.com/Alvin9999-newpac/Juicity-Plus
 # ============================================================
 
 set -Eeuo pipefail
@@ -85,7 +85,7 @@ show_menu() {
 
   echo -e "${BOLD}${CYAN}"
   echo " ================================================"
-  echo "   Juicity 管理脚本"
+  echo "   Juicity 管理脚本 v1.0.0"
   echo "   https://github.com/Alvin9999-newpac/Juicity-Plus"
   echo -e " ================================================${PLAIN}"
   printf " %-12s ${BC}%s${PLAIN}\n"   "BBR 加速："  "$BBR"
