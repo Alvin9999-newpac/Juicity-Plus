@@ -113,11 +113,6 @@ curl -fsSL -o Juicity-Plus.sh https://raw.githubusercontent.com/Alvin9999-newpac
    ```
 4. 本地 SOCKS5 代理地址：`127.0.0.1:1080`
 
-### NekoRay（Windows / Linux）
-
-1. 下载 [NekoRay](https://github.com/MatsuriDayo/nekoray/releases)
-2. 复制分享链接，在 NekoRay 中选择「从剪贴板导入」即可
-
 ### NekoBox/exclave（Android）
 
 1. nekobox官方原版不支持juicity，下载改版的nekobox [NekoBoxForAndroid](https://github.com/starifly/NekoBoxForAndroid)
